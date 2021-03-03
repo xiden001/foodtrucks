@@ -33,23 +33,7 @@ class Database extends Config
 	 * @var array
 	 */
 	public $default = [
-		'DSN'      => '',
-		'hostname' => 'ec2-54-145-249-177.compute-1.amazonaws.com',
-		'username' => 'qakvvzuodjnxjy',
-		'password' => 'bd1c62f2a93c0108c7f4a89dd3be10c4c86f8dbb6ba92db8155befba2e54bebd',
-		'database' => 'd32ro33kcqbhi5',
-		'DBDriver' => 'MySQLi',
-		'DBPrefix' => '',
-		'pConnect' => false,
-		'DBDebug'  => (ENVIRONMENT !== 'production'),
-		'charset'  => 'utf8',
-		'DBCollat' => 'utf8_general_ci',
-		'swapPre'  => '',
-		'encrypt'  => false,
-		'compress' => false,
-		'strictOn' => false,
-		'failover' => [],
-		'port'     => 5432,
+		'DSN'      => 'postgres://qakvvzuodjnxjy:bd1c62f2a93c0108c7f4a89dd3be10c4c86f8dbb6ba92db8155befba2e54bebd@ec2-54-145-249-177.compute-1.amazonaws.com:5432/d32ro33kcqbhi5',
 	];
 
 	/**
