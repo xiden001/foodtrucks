@@ -65,6 +65,7 @@ class Filters extends BaseConfig
 			'before' => [
 				'posts/*',
 				'posts'
-		  ],
+			],
+		]
 	];
 }
