@@ -33,11 +33,11 @@ class Database extends Config
 	 * @var array
 	 */
 	public $default = [
-		'DSN'      => 'postgres://qakvvzuodjnxjy:bd1c62f2a93c0108c7f4a89dd3be10c4c86f8dbb6ba92db8155befba2e54bebd@ec2-54-145-249-177.compute-1.amazonaws.com:5432/d32ro33kcqbhi5',
-		'hostname' => 'localhost',
-		'username' => 'root',
-		'password' => '',
-		'database' => 'makefoodapp',
+		'DSN'      => '',
+		'hostname' => 'ec2-54-145-249-177.compute-1.amazonaws.com',
+		'username' => 'qakvvzuodjnxjy',
+		'password' => 'bd1c62f2a93c0108c7f4a89dd3be10c4c86f8dbb6ba92db8155befba2e54bebd',
+		'database' => 'd32ro33kcqbhi5',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
@@ -49,7 +49,7 @@ class Database extends Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 3306,
+		'port'     => 5432,
 	];
 
 	/**
