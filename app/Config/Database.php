@@ -4,6 +4,8 @@ namespace Config;
 
 use CodeIgniter\Database\Config;
 
+
+
 /**
  * Database Configuration
  */
@@ -31,11 +33,11 @@ class Database extends Config
 	 * @var array
 	 */
 	public $default = [
-		'DSN'      => '',
+		'DSN'      => 'postgres://qakvvzuodjnxjy:bd1c62f2a93c0108c7f4a89dd3be10c4c86f8dbb6ba92db8155befba2e54bebd@ec2-54-145-249-177.compute-1.amazonaws.com:5432/d32ro33kcqbhi5',
 		'hostname' => 'localhost',
-		'username' => '',
+		'username' => 'root',
 		'password' => '',
-		'database' => '',
+		'database' => 'makefoodapp',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
@@ -85,8 +87,7 @@ class Database extends Config
 		// Ensure that we always set the database group to 'tests' if
 		// we are currently running an automated test suite, so that
 		// we don't overwrite live data on accident.
-		if (ENVIRONMENT === 'testing')
-		{
+		if (ENVIRONMENT === 'testing') {
 			$this->defaultGroup = 'tests';
 		}
 	}

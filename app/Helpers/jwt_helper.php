@@ -2,7 +2,7 @@
 
 use App\Models\UserModel;
 use Config\Services;
-use Firebase\JWT\JWT;
+use \Firebase\JWT\JWT;
 
 function getJWTFromRequest($authenticationHeader): string
 {
@@ -24,7 +24,7 @@ function validateJWTFromRequest(string $encodedToken)
 function getSignedJWTForUser(string $email)
 {
     $issuedAtTime = time();
-    $tokenTimeToLive = getenv('JWT_TIME_TO_LIVE');
+    $tokenTimeToLive = 3600;
     $tokenExpiration = $issuedAtTime + $tokenTimeToLive;
     $payload = [
         'email' => $email,
